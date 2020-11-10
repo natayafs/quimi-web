@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -13,10 +14,10 @@ export default function Header() {
         <span className="ml-3 text-xl">Fernando Romero</span>
       </a>
       <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a href="/" className="mr-5 hover:text-gray-900">Inicio</a>
-        <a href="/trayectoria" className="mr-5 hover:text-gray-900">Trayectoria</a>
-        <a href="/cursos" className="mr-5 hover:text-gray-900">Cursos</a>
-        <a href="/contacto" className="mr-5 hover:text-gray-900">Contacto</a>
+        <Link to="/" className="mr-5 hover:text-gray-900">Inicio</Link>
+        <Link to="/trayectoria" className="mr-5 hover:text-gray-900">Trayectoria</Link>
+        <Link to="/cursos" className="mr-5 hover:text-gray-900">Cursos</Link>
+        <Link to="/contacto" className="mr-5 hover:text-gray-900">Contacto</Link>
       </nav>
       <button className="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
         Botoncito
